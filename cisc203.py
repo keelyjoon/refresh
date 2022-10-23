@@ -20,8 +20,6 @@ def calculate():
 
     plt.show()
 
-
-
 calculate()
 
 
