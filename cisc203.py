@@ -1,14 +1,26 @@
+import matplotlib.pyplot as plt
 def calculate():
-    my_list  =  [1, 4, 9]
+    y  =  [1, 4, 9]
     
     lst = list(range(4,101))
-    term = len(my_list) + 1
+    term = len(y) + 1
 
     for num in lst:
-        value = (my_list[-1]) - (my_list[-2]) + (my_list[-3]) + 2*(2*term-3)
-        my_list.append(value)
+        value = (y[-1]) - (y[-2]) + (y[-3]) + 2*(2*term-3)
+        y.append(value)
         term += 1
-    print(my_list)
+    print(y)
+
+    x = list(range(1,101))
+
+    plt.plot(x,y)
+    plt.xlabel('Terms from 1-100')
+    plt.ylabel("Values")
+    plt.title("Question 7")
+
+    plt.show()
+
+
 
 calculate()
 
