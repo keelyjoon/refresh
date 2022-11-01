@@ -65,4 +65,4 @@ def compareReverse(string, reversedString):
         print("true")
     else:
         print("false")
-compareReverse("hello", "holleh")
+#compareReverse("hello", "holleh")
